@@ -1,0 +1,5 @@
+<launch>
+  <node name="simple_server" pkg="interview_code" type="interview_server_node" output="screen"/>
+  <node name="simple_agent_1" pkg="interview_code" type="interview_agent_node" output="screen"/>
+  <node name="simple_agent_2" pkg="interview_code" type="interview_agent_node" output="screen"/>
+</launch>
