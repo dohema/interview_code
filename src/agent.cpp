@@ -28,6 +28,12 @@ void agent_task_callback(const interview_code::task_command::ConstPtr& msg)
 
 int main(int argc, char **argv)
 {
+  if (3 == argc && "-t" == argv[1])
+  {
+    int delay_count = std::stoi(argv[2]);
+    sleep(delay_count);
+  }
+
   std::time_t seconds = std::time(nullptr);
   std::time (&seconds);
 
